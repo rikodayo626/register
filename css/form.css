@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main {
+    width: 700px;
+    height: 200px;
+}
+
+.item {
+    width: 700px;
+}
+.label {
+    display: flex;
+    width: 200px;
+}

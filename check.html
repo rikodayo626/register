@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/form.css">
+    <title>確認</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <p>入力内容をご確認ください。</p>
+            <form action="./SendMail.php" method="post">
+                <div class="item">
+                    <label for="familyName">氏名</label>
+                    <?php echo $_SESSION["familyName"].' '.$_SESSION["firstName"]; ?>
+                </div>
+                <div class="item">
+                    <label for="mail">メールアドレス</label>
+                    <?php echo $_SESSION["mail"]; ?>
+                </div>
+                <div class="item">
+                    <label for="mailKakunin">メールアドレス(確認用)</label>
+                    <?php echo $_SESSION["mailKakunin"]; ?>
+                </div>
+                <div>
+                    <input  type="button" onClick="history.back()" value="修正する"><input type="submit" value="送信">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
